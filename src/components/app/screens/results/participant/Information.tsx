@@ -16,23 +16,23 @@ const Information = ({ participant }: Props) => {
                             <div className='grid grid-cols-2 gap-4'>
                                 <div>
                                     <p className='text'>Goleador</p>
-                                    <p className='text bold'>{participant?.data.responses?.more_goals}</p>
+                                    <p className='text bold'>{participant?.copamerica?.data?.responses?.more_goals}</p>
                                 </div>
                                 <div>
                                     <p className='text'>Marcador final</p>
-                                    <p className='text bold'>{participant?.data.responses?.final_score}</p>
+                                    <p className='text bold'>{participant?.copamerica?.data?.responses?.final_score}</p>
                                 </div>
                                 <div>
                                     <p className='text'>¿Tiempo regular?</p>
-                                    <p className='text bold'>{participant?.data.responses?.regular_time || '-'}</p>
+                                    <p className='text bold'>{participant?.copamerica?.data?.responses?.regular_time || '-'}</p>
                                 </div>
                                 <div>
                                     <p className='text'>¿Tiempo Extra?</p>
-                                    <p className='text bold'>{participant?.data.responses?.extra_time || '-'}</p>
+                                    <p className='text bold'>{participant?.copamerica?.data?.responses?.extra_time || '-'}</p>
                                 </div>
                                 <div>
                                     <p className='text'>¿Penales?</p>
-                                    <p className='text bold'>{participant?.data.responses?.penalties || '-'}</p>
+                                    <p className='text bold'>{participant?.copamerica?.data?.responses?.penalties || '-'}</p>
                                 </div>
                             </div>
                         </div>

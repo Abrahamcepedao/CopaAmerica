@@ -58,10 +58,10 @@ const ParticipantComponent = ({ id }: Props) => {
             if (id) {
                 const res = await participantService.get(id);
                 if (res.status === 200 && res.data) {
-                    if(res.data.data?.round8Games) tempGames = tempGames.concat(res.data.data.round8Games)
-                    if(res.data.data?.round4Games) tempGames = tempGames.concat(res.data.data.round4Games)
-                    if(res.data.data?.round2Games) tempGames = tempGames.concat(res.data.data.round2Games)
-                    if(res.data.data?.finalGames) tempGames = tempGames.concat(res.data.data.finalGames)
+                    if(res.data?.copamerica?.data?.round4Games) tempGames = tempGames.concat(res.data?.copamerica?.data.round4Games)
+                    if(res.data?.copamerica?.data?.round2Games) tempGames = tempGames.concat(res.data?.copamerica?.data.round2Games)
+                    if(res.data?.copamerica?.data?.thirdGames) tempGames = tempGames.concat(res.data?.copamerica?.data.thirdGames)
+                    if(res.data?.copamerica?.data?.finalGames) tempGames = tempGames.concat(res.data?.copamerica?.data.finalGames)
                     setParticipant(res.data)
                 } else {
                     push('/app/results');

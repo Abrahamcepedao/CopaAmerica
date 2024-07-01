@@ -34,9 +34,9 @@ const Games = () => {
         if(!loadingGames) {
             if(gamesResults) {
                 let tempGames: IGame[] = []
-                if(gamesResults.round8Games) tempGames = tempGames.concat(gamesResults.round8Games)
                 if(gamesResults.round4Games) tempGames = tempGames.concat(gamesResults.round4Games)
                 if(gamesResults.round2Games) tempGames = tempGames.concat(gamesResults.round2Games)
+                if(gamesResults.thirdGames) tempGames = tempGames.concat(gamesResults.thirdGames)
                 if(gamesResults.finalGames) tempGames = tempGames.concat(gamesResults.finalGames)
                 console.log('tempGames', tempGames)
 

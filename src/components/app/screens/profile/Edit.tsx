@@ -1,7 +1,7 @@
 'use client';
 
 //react
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 //next
 import { useRouter } from "next/navigation";

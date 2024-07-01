@@ -47,6 +47,10 @@ const signup = async (name:string, nickname: string, mail:string, phone: string,
             phone: phone,
             hasPaid: false,
             hasSelected: false,
+            copamerica: {
+                hasPaid: false,
+                hasSelected: false,
+            }
         }
         await addUser(result.user.uid, tempUser)
         return { user: tempUser, status: 200 };

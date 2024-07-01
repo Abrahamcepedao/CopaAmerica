@@ -1,44 +1,27 @@
 'use client';
 
-//react
-import { useState } from "react";
-
 //next
 import { useRouter } from "next/navigation";
 
 //components
 import { Button } from "@/components/ui";
 
-//lib
-import { logout } from "@/database/functions/auth";
-
 //redux
-import { useDispatch } from "react-redux";
-import { setReduxUser,selectUser } from "@/app/GlobalRedux/Features/auth/authSlice";
+import { selectUser } from "@/app/GlobalRedux/Features/auth/authSlice";
 import { useSelector } from "react-redux";
 
 //react-icons
-import { TbEdit, TbLogout, TbCirclePlus, TbX } from "react-icons/tb";
+import { TbEdit } from "react-icons/tb";
 
 //interfaces
-import { IUser, IInput } from "@/utils/interfaces/types";
+import { IUser } from "@/utils/interfaces/types";
 
 const Profile = () => {
     //router
     const { push } = useRouter();
 
     //redux
-    const dispatch = useDispatch();
-
-    //redux
     const user: IUser | null = useSelector(selectUser);
-
-    //handle logout
-    const handleLogout = async () => {
-        await logout();
-        dispatch(setReduxUser(null));
-        push('/login');
-    }
 
     //handle edit profile
     const handleEditProfile = () => {

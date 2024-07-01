@@ -28,9 +28,9 @@ export const useGamesResults = () => {
             console.log(res);
             if(res.status === 200 && res.data) {
                 let tempGames: IGame[] = []
-                if(res.data.round8Games) tempGames = tempGames.concat(res.data.round8Games)
                 if(res.data.round4Games) tempGames = tempGames.concat(res.data.round4Games)
                 if(res.data.round2Games) tempGames = tempGames.concat(res.data.round2Games)
+                if(res.data.thirdGames) tempGames = tempGames.concat(res.data.thirdGames)
                 if(res.data.finalGames) tempGames = tempGames.concat(res.data.finalGames)
                 
                 dispatch(setReduxGamesResults(res.data))

@@ -11,254 +11,141 @@ export const CAN_SELECT = true
 
 export const countries: ICountry[] = [
     {
-        img: '/img/countries/holland.png',
-        name: 'Países Bajos'
+        img: '/img/countries/argentina.png',
+        name: 'Argentina',
     },
     {
-        img: '/img/countries/england.png',
-        name: 'Inglaterra'
+        img: '/img/countries/brasil.png',
+        name: 'Brasil',
     },
     {
-        img: '/img/countries/gales.png',
-        name: 'Gales'
+        img: '/img/countries/canada.png',
+        name: 'Canadá',
     },
     {
-        img: '/img/countries/polonia.png',
-        name: 'Polonia'
+        img: '/img/countries/costa_rica.png',
+        name: 'Costa Rica',
     },
     {
-        img: '/img/countries/france.png',
-        name: 'Francia'
+        img: '/img/countries/ecuador.png',
+        name: 'Ecuador',
     },
     {
-        img: '/img/countries/denmark.png',
-        name: 'Dinamarca'
+        img: '/img/countries/jamaica.png',
+        name: 'Jamaica',
     },
     {
-        img: '/img/countries/spain.png',
-        name: 'España'
+        img: '/img/countries/mexico.png',
+        name: 'México',
     },
     {
-        img: '/img/countries/germany.png',
-        name: 'Alemania'
+        img: '/img/countries/uruguay.png',
+        name: 'Uruguay',
     },
     {
-        img: '/img/countries/belgium.png',
-        name: 'Bélgica'
+        img: '/img/countries/us.png',
+        name: 'Estados Unidos',
     },
     {
-        img: '/img/countries/croacia.png',
-        name: 'Croacia'
-    },
-    {
-        img: '/img/countries/serbia.png',
-        name: 'Serbia'
-    },
-    {
-        img: '/img/countries/suiza.png',
-        name: 'Suiza'
-    },
-    {
-        img: '/img/countries/portugal.png',
-        name: 'Portugal'
-    },
-    //new
-    {
-        img: '/img/countries/turkey.png',
-        name: 'Turquía'
-    },
-    {
-        img: '/img/countries/italy.png',
-        name: 'Italia'
-    },
-    {
-        img: '/img/countries/ukraine.png',
-        name: 'Ucrania'
-    },
-    {
-        img: '/img/countries/austria.png',
-        name: 'Austria'
-    },
-    {
-        img: '/img/countries/slovakia.png',
-        name: 'Eslovaquia'
-    },
-    {
-        img: '/img/countries/romania.png',
-        name: 'Rumania'
-    },
-    {
-        img: '/img/countries/slovenia.png',
-        name: 'Eslovenia'
-    },
-    {
-        img: '/img/countries/georgia.png',
-        name: 'Georgia'
+        img: '/img/countries/venezuela.png',
+        name: 'Venezuela',
     },
 ];
 
 export const games: IGame[] = [
     {
-        num: 37,
-        country1: 'Alemania',
-        country2: 'Dinamarca', //update
-        date: 'Sábado 29 de Junio',
-        time: '13:00 (CDMX)',
-        stadium: 'BVB Stadion Dortmund',
-        type: 'round8',
-        winner: 0,
-    },
-    {
-        num: 38,
-        country1: 'Suiza',
-        country2: 'Italia', //update
-        date: 'Sábado 29 de Junio',
-        time: '10:00 (CDMX)',
-        stadium: 'Olympiastadion Berlin',
-        type: 'round8',
-        winner: 0,
-    },
-    {
-        num: 39,
-        country1: 'España',
-        country2: 'Georgia', //update
-        date: 'Domingo 30 de Junio',
-        time: '13:00 (CDMX)',
-        stadium: 'Cologne Stadium',
-        type: 'round8',
-        winner: 0,
-    },
-    {
-        num: 40,
-        country1: 'Inglaterra', //update
-        country2: 'Eslovaquia', //update
-        date: 'Domingo 30 de Junio',
-        time: '10:00 (CDMX)',
-        stadium: 'Arena AufSchalke',
-        type: 'round8',
-        winner: 0,
-    },
-    {
-        num: 41,
-        country1: 'Portugal',
-        country2: 'Eslovenia', //update
-        date: 'Lunes 1 de Julio',
-        time: '13:00 (CDMX)',
-        stadium: 'Deutsche Bank Park',
-        type: 'round8',
-        winner: 0,
-    },
-    {
-        num: 42,
-        country1: 'Francia', //update
-        country2: 'Bélgica', //update
-        date: 'Lunes 1 de Julio',
-        time: '10:00 (CDMX)',
-        stadium: 'Dusseldorf Arena',
-        type: 'round8',
-        winner: 0,
-    },
-    {
-        num: 43,
-        country1: 'Rumania', //update
-        country2: 'Países Bajos', //update
-        date: 'Martes 2 de Julio',
-        time: '10:00 (CDMX)',
-        stadium: 'Munich Football Arena',
-        type: 'round8',
-        winner: 0,
-    },
-    {
-        num: 44,
-        country1: 'Austria', //update
-        country2: 'Turquía', //update
-        date: 'Martes 2 de Julio',
-        time: '13:00 (CDMX)',
-        stadium: 'Leipzig Stadium',
-        type: 'round8',
-        winner: 0,
-    },
-    {
-        num: 45,
+        num: 25,
         winner1: 'W39',
         winner2: 'W37',
-        country1: '',
-        country2: '',
-        date: 'Viernes 5 de Julio',
-        time: '10:00 (CDMX)',
-        stadium: 'Stuttgart Arena',
+        country1: 'Argentina',
+        country2: 'Ecuador',
+        date: 'Jueves 4 de Julio',
+        time: '20:00 (CDMX)',
+        stadium: 'NRG Stadium - Houston, TX',
         type: 'round4',
         winner: 0,
     },
     {
-        num: 46,
+        num: 26,
         winner1: 'W41',
         winner2: 'W42',
-        country1: '',
-        country2: '',
+        country1: 'Venenzuela',
+        country2: 'Canadá',
         date: 'Viernes 5 de Julio',
-        time: '13:00 (CDMX)',
-        stadium: 'Volksparkstadion Arena',
+        time: '20:00 (CDMX)',
+        stadium: 'AT&T Stadium - Arlington, TX',
         type: 'round4',
         winner: 0,
     },
     {
-        num: 47,
+        num: 27,
         winner1: 'W43',
         winner2: 'W44',
-        country1: '',
-        country2: '',
+        country1: 'Uruguay',
+        country2: 'Brasil',
         date: 'Sábado 6 de Julio',
-        time: '10:00 (CDMX)',
-        stadium: 'Dusseldorf Arena',
+        time: '18:00 (CDMX)',
+        stadium: 'Allegiant Stadium - Las Vegas, NV',
         type: 'round4',
         winner: 0,
     },
     {
-        num: 48,
+        num: 28,
         winner1: 'W40',
         winner2: 'W38',
-        country1: '',
-        country2: '',
+        country1: 'Colombia',
+        country2: 'Estados Unidos',
         date: 'Sábado 6 de Julio',
-        time: '13:00 (CDMX)',
-        stadium: 'Olympiastadion Berlin',
+        time: '15:00 (CDMX)',
+        stadium: 'State Farm Stadium - Glendale, AZ',
         type: 'round4',
         winner: 0,
     },
     {
-        num: 49,
-        winner1: 'W45',
-        winner2: 'W46',
+        num: 29,
+        winner1: 'W25',
+        winner2: 'W26',
         country1: '',
         country2: '',
         date: 'Martes 9 de Julio',
-        time: '13:00 (CDMX)',
-        stadium: 'Munich Footbal Arena',
+        time: '20:00 (CDMX)',
+        stadium: 'MetLife Stadium - East Rutherford, NJ',
         type: 'round2',
         winner: 0,
     },
     {
-        num: 50,
-        winner1: 'W47',
-        winner2: 'W48',
+        num: 30,
+        winner1: 'W27',
+        winner2: 'W28',
         country1: '',
         country2: '',
         date: 'Miércoles 10 de Julio',
-        time: '13:00 (CDMX)',
-        stadium: 'BVB Stadion Dortmund',
+        time: '20:00 (CDMX)',
+        stadium: 'Bank of America Stadium - Charlotte, NC',
         type: 'round2',
         winner: 0,
     },
     {
-        num: 51,
-        winner1: 'W49',
-        winner2: 'W50',
+        num: 31,
+        winner1: 'L29',
+        winner2: 'L30',
+        country1: '',
+        country2: '',
+        date: 'Miércoles 10 de Julio',
+        time: '20:00 (CDMX)',
+        stadium: 'Bank of America Stadium - Charlotte, NC',
+        type: 'third',
+        winner: 0,
+    },
+    {
+        num: 32,
+        winner1: 'W29',
+        winner2: 'W30',
         country1: '',
         country2: '',
         date: 'Domingo 14 de Julio',
         time: '13:00 (CDMX)',
-        stadium: 'Olympiastadion Berlin',
+        stadium: 'Hard Rock Stadium - Miami, FL',
         type: 'final',
         winner: 0,
     },

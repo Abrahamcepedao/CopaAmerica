@@ -139,6 +139,7 @@ export interface IUser {
         data?: {
             round4Games: IGame[],
             round2Games: IGame[],
+            thirdGames: IGame[],
             finalGames: IGame[],
             responses: {
                 more_goals: string,
@@ -166,14 +167,14 @@ export interface IGame {
   winner?: number; // 0 = tie, 1 = country1, 2 = country2
   winner1?: string;
   winner2?: string;
-  type:  'round8' | 'round4' | 'round2' | 'final',
+  type:  'round8' | 'round4' | 'round2' | 'third' | 'final',
   points?: number;
 }
 
 export interface IGameResults {
-    round8Games: IGame[],
     round4Games: IGame[],
     round2Games: IGame[],
+    thirdGames: IGame[],
     finalGames: IGame[],
 }
 

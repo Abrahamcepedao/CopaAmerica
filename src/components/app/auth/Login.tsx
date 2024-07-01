@@ -22,6 +22,7 @@ import { setReduxUser } from "@/app/GlobalRedux/Features/auth/authSlice";
 
 //lib
 import { login } from "@/database/functions/auth";
+import { participantService } from "@/database/functions/DbService";
 
 //interfaces
 import { IInput, IUser } from "@/utils/interfaces/types";
@@ -58,7 +59,23 @@ const Login = () => {
             console.log(res);
             setLoading(false);
             if(res && res.status === 200) {
-                dispatch(setReduxUser(res.data as IUser));
+                //check user has object copamerica
+                if(res.data.copamerica) dispatch(setReduxUser(res.data as IUser));
+                else {
+                    //if user has no object copamerica, create it
+                    const newUser: IUser = {
+                        ...res.data,
+                        copamerica: {
+                            hasPaid: false,
+                            hasSelected: false,
+                        }
+                    }
+                    console.log(newUser);
+                    const res_update = await participantService.update(res.data.uid, newUser);
+                    console.log(res_update);
+                    if(res_update.status === 200) dispatch(setReduxUser(newUser));
+                    else message.error('Ocurrió un error inesperado');
+                }
                 push('/app');
             } else if(res && res.status === 400) message.error(res.data);
             else message.error('Ocurrió un error inesperado');

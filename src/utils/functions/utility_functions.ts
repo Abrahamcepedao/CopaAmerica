@@ -86,7 +86,7 @@ export const calculatePoints = (prediction: IGame[], result: IGame[]): IGame[] =
     let tempGames: IGame[] = []
     prediction.forEach((item: IGame, index: number) => {
         let points = 0
-        if(item.type === 'round8') {
+        if(item.type === 'round4') {
             if(item.winner === result[index].winner) points += 1
             if(item.country1Goals === result[index].country1Goals && item.country2Goals === result[index].country2Goals) points += 5
             else if (item.country1Goals === result[index].country1Goals || item.country2Goals === result[index].country2Goals) points += 2

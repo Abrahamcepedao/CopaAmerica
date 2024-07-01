@@ -64,12 +64,11 @@ const Home = () => {
     useEffect(() => {
         if(reduxUser) {
             console.log(reduxUser)
-            if(reduxUser.hasSelected && reduxUser.data) {
+            if(reduxUser?.copamerica?.hasSelected && reduxUser?.copamerica?.data) {
                 let tempGames: IGame[] = []
-                if(reduxUser.data.round8Games) tempGames = tempGames.concat(reduxUser.data.round8Games)
-                if(reduxUser.data.round4Games) tempGames = tempGames.concat(reduxUser.data.round4Games)
-                if(reduxUser.data.round2Games) tempGames = tempGames.concat(reduxUser.data.round2Games)
-                if(reduxUser.data.finalGames) tempGames = tempGames.concat(reduxUser.data.finalGames)
+                if(reduxUser?.copamerica?.data.round4Games) tempGames = tempGames.concat(reduxUser?.copamerica?.data.round4Games)
+                if(reduxUser?.copamerica?.data.round2Games) tempGames = tempGames.concat(reduxUser?.copamerica?.data.round2Games)
+                if(reduxUser?.copamerica?.data.finalGames) tempGames = tempGames.concat(reduxUser?.copamerica?.data.finalGames)
                 console.log('tempGames', tempGames)
                 setMyGames(tempGames)
                 setMyGamesList(tempGames)
@@ -79,8 +78,8 @@ const Home = () => {
     
     useEffect(() => {
         if(reduxUser !== null){
-            if(reduxUser.hasSelected){
-                if(reduxUser.hasPaid !== true) {
+            if(reduxUser.copamerica?.hasSelected){
+                if(reduxUser.copamerica?.hasPaid !== true) {
                     handleRefresh()
                 } 
             } else {

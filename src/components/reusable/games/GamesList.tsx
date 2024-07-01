@@ -22,14 +22,14 @@ export const GamesList: React.FC<GameListProps> = ({ games, showGoals = true, sh
       {gameTypes.map(type => (
         <div key={type} className='border border-white p-2 rounded-md'>
             <h2 className="text-2xl font-bold mb-4 text-center">
-                {type === 'round8' ? 'Octavos de Final' :
-                type === 'round4' ? 'Cuartos de Final' :
+                {type === 'round4' ? 'Cuartos de Final' :
                 type === 'round2' ? 'Semifinales' :
+                type === 'third' ? 'Tercer Lugar' :
                 type === 'final' ? 'Final' : type}
             </h2>
             <div className='space-y-8'>
                 {games.filter(game => game.type === type).map(game => (
-                    <GameCard key={game.num} game={game} countries={countries} showGoals={showGoals ? showGoals : game.type === 'round8'} showPoints={showPoints}/>
+                    <GameCard key={game.num} game={game} countries={countries} showGoals={showGoals ? showGoals : game.type === 'round4'} showPoints={showPoints}/>
                 ))}
             </div>
         </div>
