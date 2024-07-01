@@ -2,32 +2,118 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+@layer components {
+  /* <-------text---------> */
+  .title {
+    @apply text-2xl bold text-white;
+  }
+  .subtitle {
+    @apply text-xl bold text-white;
+  }
+  .subtitle_2 {
+    @apply text-lg bold;
+  }
+  .subtitle_3 {
+    @apply text-sm bold;
+  }
+  .subtitle_3 {
+    @apply text-sm semibold;
+  }
+  .link {
+    @apply text-lightblue underline;
+  }
+  .text {
+    @apply text-sm;
+  }
+  .label {
+    @apply text-xs text-white;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+  /* <--------icons--------> */
+  .icon {
+    @apply !text-2xl text-white pointer;
+  }
+
+  /* <-------flex---------> */
+  .flex_center {
+    @apply flex justify-center flex-col items-center;
+  }
+  .flex_end_start {
+    @apply flex justify-end flex-col items-start;
+  }
+  .flex_end_end {
+    @apply flex justify-end flex-col items-end;
+  }
+  .flex_c_center {
+    @apply flex justify-center items-center;
+  }
+  .flex_b_center {
+    @apply flex justify-between items-center;
+  }
+  .flex_b_start {
+    @apply flex justify-between items-start;
+  }
+  .flex_s_center {
+    @apply flex justify-start items-center;
+  }
+  .flex_s_start {
+    @apply flex justify-start items-start;
+  }
+  .flex_e_center {
+    @apply flex justify-end items-center;
+  }
+
+  /* <--------utils--------> */
+  .bold {
+    @apply font-bold;
+  }
+  .semibold {
+    @apply font-semibold;
+  }
+  .pointer {
+    @apply cursor-pointer;
+  }
+  .img_back {
+    @apply bg-cover bg-center bg-no-repeat;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+/* ant button */
+.ant-btn-primary {
+  background-color: #1677ff !important;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+
+/* customize scrollbar */
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  background: none;
+}
+
+::-webkit-scrollbar-track {
+  background: none;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: none;
+  width: 0px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-corner {
+  background: none;
+}
+
+/* autofill */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active {
+  transition: background-color 5000s;
+  -webkit-text-fill-color: #000 !important;
+  background: none !important;
+}
+input:-internal-autofill-selected {
+  background-color: transparent !important;
 }
