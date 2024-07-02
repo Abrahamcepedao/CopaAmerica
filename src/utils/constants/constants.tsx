@@ -23,6 +23,10 @@ export const countries: ICountry[] = [
         name: 'Canadá',
     },
     {
+        img: '/img/countries/colombia.png',
+        name: 'Colombia',
+    },
+    {
         img: '/img/countries/costa_rica.png',
         name: 'Costa Rica',
     },
@@ -69,7 +73,7 @@ export const games: IGame[] = [
         num: 26,
         winner1: 'W41',
         winner2: 'W42',
-        country1: 'Venenzuela',
+        country1: 'Venezuela',
         country2: 'Canadá',
         date: 'Viernes 5 de Julio',
         time: '20:00 (CDMX)',

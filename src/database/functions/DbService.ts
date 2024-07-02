@@ -161,5 +161,5 @@ export class DbService<T> {
 
 //export services
 export const participantService = new DbService<IUser>('users');
-export const gameResultsService = new DbService<IGameResults>('game_results_copamerica');
-export const leaderboardService = new DbService<ILeaderboard>('leaderboard_copamerica');
+export const gameResultsService = new DbService<IGameResults>('game_results');
+export const leaderboardService = new DbService<ILeaderboard>('leaderboard');

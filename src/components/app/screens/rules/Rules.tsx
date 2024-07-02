@@ -18,8 +18,8 @@ const QuinielaRules = () => {
                         Seguido se colocará el resultado predecido entre ambas banderas. Para colocar el resultado se deberá elegir utilizando las flechas arriba (agregar gol), abajo (descontar gol).
                     </p>
                     <p>
-                        Esto se repetirá para cada partido de las eliminatorias de octavos de final.
-                        A partir de 4tos, semifinal y final, únicamente se deberá seleccionar la bandera de la selección que se piense ganadora.
+                        Esto se repetirá para cada partido de las eliminatorias de cuartos de final.
+                        A partir de semifinal, tercer lugar y final, únicamente se deberá seleccionar la bandera de la selección que se piense ganadora.
                     </p>
                 </section>
 
@@ -60,17 +60,17 @@ const QuinielaRules = () => {
                 <section>
                     <h2 className="text-2xl font-semibold">SISTEMA DE PUNTOS</h2>
                     <ul className="list-disc ml-5 space-y-2">
-                        <li>Por cada acierto del ganador en los juegos de octavos de final, obtendrás 1 punto.</li>
+                        <li>Por cada acierto del ganador en los juegos de cuarto de final, obtendrás 1 punto.</li>
                         <li>Si se acierta el resultado de un solo equipo se obtendrán 2 puntos adicionales.</li>
                         <li>Si se acierta el marcador exacto, se conseguirán 5 puntos adicionales.</li>
                     </ul>
                     <p><strong>Ejemplo:</strong></p>
-                    <p>Partido entre España v Alemania:</p>
-                    <p>El participante coloca como ganador a España con un resultado de 2-1 a favor de la selección española. El partido queda en 2-0.</p>
-                    <p>Se obtendrán 1 punto por acierto a la selección ganadora. Adicional 2 puntos por acertar la cantidad de goles por parte de España.</p>
-                    <p>Al no colocar el resultado correcto por parte de la cantidad de goles de la selección alemana, no se obtendrían los 5 puntos adicionales.</p>
+                    <p>Partido entre Colombia vs Brasil:</p>
+                    <p>El participante coloca como ganador a Colombia con un resultado de 2-1 a favor de la selección española. El partido queda en 2-0.</p>
+                    <p>Se obtendrán 1 punto por acierto a la selección ganadora. Adicional 2 puntos por acertar la cantidad de goles por parte de Colombia.</p>
+                    <p>Al no colocar el resultado correcto por parte de la cantidad de goles de la selección brasileña, no se obtendrían los 5 puntos adicionales.</p>
                     <p>Al final en ese partido el participante obtendría un total de 3 puntos.</p>
-                    <p>Para los juegos de 4tos de final, semifinales y la final, únicamente se obtendrá 1 punto por cada acierto a la selección ganadora.</p>
+                    <p>Para los juegos de semifinales, tercer lugar y la final, únicamente se obtendrá 1 punto por cada acierto a la selección ganadora.</p>
                 </section>
 
                 <section>

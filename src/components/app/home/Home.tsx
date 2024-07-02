@@ -68,6 +68,7 @@ const Home = () => {
                 let tempGames: IGame[] = []
                 if(reduxUser?.copamerica?.data.round4Games) tempGames = tempGames.concat(reduxUser?.copamerica?.data.round4Games)
                 if(reduxUser?.copamerica?.data.round2Games) tempGames = tempGames.concat(reduxUser?.copamerica?.data.round2Games)
+                if(reduxUser?.copamerica?.data.thirdGames) tempGames = tempGames.concat(reduxUser?.copamerica?.data.thirdGames)
                 if(reduxUser?.copamerica?.data.finalGames) tempGames = tempGames.concat(reduxUser?.copamerica?.data.finalGames)
                 console.log('tempGames', tempGames)
                 setMyGames(tempGames)
@@ -158,9 +159,9 @@ const Home = () => {
     return (
         <PullToRefresh onRefresh={handleRefresh} refreshingContent={<Loader />}>
             <div className="px-2 sm:px-4 text-white space-y-8">
-                {reduxUser?.hasPaid ? (
+                {reduxUser?.copamerica?.hasPaid ? (
                     <div>
-                        {reduxUser?.hasSelected ? (
+                        {reduxUser?.copamerica?.hasSelected ? (
                             <>
                                 <div className="flex justify-center gap-8">
                                     <div className="text-center">
