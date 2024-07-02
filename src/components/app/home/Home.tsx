@@ -182,7 +182,7 @@ const Home = () => {
                                 </div>
 
                                 <div className="mt-4 border border-white rounded-md p-2">
-                                    {reduxUser?.data && (
+                                    {reduxUser?.copamerica?.data && (
                                         <div className='ds_container w-full'>
                                             <div className='grid grid-cols-2 gap-4'>
                                                 <div>
@@ -191,19 +191,19 @@ const Home = () => {
                                                 </div>
                                                 <div>
                                                     <p className='text'>Marcador final</p>
-                                                    <p className='text bold'>{reduxUser?.data.responses?.final_score}</p>
+                                                    <p className='text bold'>{reduxUser?.copamerica?.data?.responses?.final_score}</p>
                                                 </div>
                                                 <div>
                                                     <p className='text'>¿Tiempo regular?</p>
-                                                    <p className='text bold'>{reduxUser?.data.responses?.regular_time || '-'}</p>
+                                                    <p className='text bold'>{reduxUser?.copamerica?.data?.responses?.regular_time || '-'}</p>
                                                 </div>
                                                 <div>
                                                     <p className='text'>¿Tiempo extra?</p>
-                                                    <p className='text bold'>{reduxUser?.data.responses?.extra_time || '-'}</p>
+                                                    <p className='text bold'>{reduxUser?.copamerica?.data?.responses?.extra_time || '-'}</p>
                                                 </div>
                                                 <div>
                                                     <p className='text'>¿Penales?</p>
-                                                    <p className='text bold'>{reduxUser?.data.responses?.penalties || '-'}</p>
+                                                    <p className='text bold'>{reduxUser?.copamerica?.data?.responses?.penalties || '-'}</p>
                                                 </div>
                                             </div>
                                         </div>

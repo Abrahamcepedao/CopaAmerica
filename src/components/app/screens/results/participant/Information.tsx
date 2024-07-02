@@ -9,9 +9,9 @@ const Information = ({ participant }: Props) => {
     
     return (
         <div className='space-y-4'>
-            {participant?.data && (
+            {participant?.copamerica?.data && (
                 <>
-                    {participant.data.responses && (
+                    {participant.copamerica?.data?.responses && (
                         <div className='ds_container w-full'>
                             <div className='grid grid-cols-2 gap-4'>
                                 <div>
