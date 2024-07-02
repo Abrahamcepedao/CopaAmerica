@@ -13,6 +13,9 @@ import { useSelector } from "react-redux";
 //react-icons
 import { TbEdit } from "react-icons/tb";
 
+//constants
+import { VERSION } from "@/utils/constants/constants";
+
 //interfaces
 import { IUser } from "@/utils/interfaces/types";
 
@@ -51,6 +54,10 @@ const Profile = () => {
             <div className="max-w-xs mx-auto grid grid-cols-1 gap-2 sm:gap-4">
                 {/* <Button variant="tertiary" text="Cerrar sesión" iconEnd={<TbLogout className="ml-2"/>} compressed onClick={handleLogout}/> */}
                 <Button variant="primary" text="Editar perfil" iconEnd={<TbEdit className="ml-2"/>} compressed onClick={handleEditProfile}/>
+            </div>
+
+            <div className="text-center mt-4 text-xs text-white">
+                <p>Version: {VERSION}</p>
             </div>
         </div>
     );
