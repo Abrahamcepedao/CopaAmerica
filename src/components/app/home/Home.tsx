@@ -113,7 +113,7 @@ const Home = () => {
         if(!loadingLeaderboard && leaderboard && reduxUser) {
             let tempPoints = 0
             let tempMoney = 0
-            let tempPos = ''
+            let tempPos = '-'
             leaderboard.positions.forEach((item: ILeaderboardPos) => {
                 if(item.uid === reduxUser.uid) {
                     tempPos = item.position
@@ -188,7 +188,7 @@ const Home = () => {
                                             <div className='grid grid-cols-2 gap-4'>
                                                 <div>
                                                     <p className='text'>Goleador</p>
-                                                    <p className='text bold'>{reduxUser?.data?.responses?.more_goals}</p>
+                                                    <p className='text bold'>{reduxUser?.copamerica?.data?.responses?.more_goals}</p>
                                                 </div>
                                                 <div>
                                                     <p className='text'>Marcador final</p>

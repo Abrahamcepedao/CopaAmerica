@@ -43,6 +43,10 @@ export const countries: ICountry[] = [
         name: 'México',
     },
     {
+        img: '/img/countries/panama.png',
+        name: 'Panamá',
+    },
+    {
         img: '/img/countries/uruguay.png',
         name: 'Uruguay',
     },
@@ -86,7 +90,7 @@ export const games: IGame[] = [
         winner1: 'W43',
         winner2: 'W44',
         country1: 'Uruguay',
-        country2: 'Brasil',
+        country2: 'Colombia',
         date: 'Sábado 6 de Julio',
         time: '18:00 (CDMX)',
         stadium: 'Allegiant Stadium - Las Vegas, NV',
@@ -97,8 +101,8 @@ export const games: IGame[] = [
         num: 28,
         winner1: 'W40',
         winner2: 'W38',
-        country1: 'Colombia',
-        country2: 'Estados Unidos',
+        country1: 'Brasil',
+        country2: 'Panamá',
         date: 'Sábado 6 de Julio',
         time: '15:00 (CDMX)',
         stadium: 'State Farm Stadium - Glendale, AZ',
@@ -155,4 +159,4 @@ export const games: IGame[] = [
     },
 ];
 
-export const VERSION = '1.0.1'
+export const VERSION = '1.0.2'
