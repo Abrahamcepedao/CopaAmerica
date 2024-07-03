@@ -90,7 +90,7 @@ export const games: IGame[] = [
         winner1: 'W43',
         winner2: 'W44',
         country1: 'Uruguay',
-        country2: 'Colombia',
+        country2: 'Brasil',
         date: 'Sábado 6 de Julio',
         time: '18:00 (CDMX)',
         stadium: 'Allegiant Stadium - Las Vegas, NV',
@@ -101,7 +101,7 @@ export const games: IGame[] = [
         num: 28,
         winner1: 'W40',
         winner2: 'W38',
-        country1: 'Brasil',
+        country1: 'Colombia',
         country2: 'Panamá',
         date: 'Sábado 6 de Julio',
         time: '15:00 (CDMX)',
@@ -159,4 +159,4 @@ export const games: IGame[] = [
     },
 ];
 
-export const VERSION = '1.0.3'
+export const VERSION = '1.0.4'
