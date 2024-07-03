@@ -4,7 +4,7 @@ import { IGame, ICountry } from "../interfaces/types";
 export const lastDate = {
     year: 2024,
     month: 7,
-    day: 3
+    day: 4
 }
 
 export const CAN_SELECT = true
@@ -159,4 +159,4 @@ export const games: IGame[] = [
     },
 ];
 
-export const VERSION = '1.0.4'
+export const VERSION = '1.0.5'

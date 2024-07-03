@@ -25,7 +25,7 @@ const QuinielaRules = () => {
 
                 <section>
                     <h2 className="text-2xl font-semibold">FECHA LÍMITE DE INSCRIPCIÓN</h2>
-                    <p>Viernes 28 de junio del 2024 a las 23:59pm.</p>
+                    <p>Jueves 4 de julio del 2024 a las 7:00pm (CDMX).</p>
                 </section>
 
                 <section>
@@ -63,6 +63,7 @@ const QuinielaRules = () => {
                         <li>Por cada acierto del ganador en los juegos de cuarto de final, obtendrás 1 punto.</li>
                         <li>Si se acierta el resultado de un solo equipo se obtendrán 2 puntos adicionales.</li>
                         <li>Si se acierta el marcador exacto, se conseguirán 5 puntos adicionales.</li>
+                        <li>En semifinales se darán 2 puntos, en tercer lugar 3 puntos y en la final 5 puntos.</li>
                     </ul>
                     <p><strong>Ejemplo:</strong></p>
                     <p>Partido entre Colombia vs Brasil:</p>
@@ -70,7 +71,6 @@ const QuinielaRules = () => {
                     <p>Se obtendrán 1 punto por acierto a la selección ganadora. Adicional 2 puntos por acertar la cantidad de goles por parte de Colombia.</p>
                     <p>Al no colocar el resultado correcto por parte de la cantidad de goles de la selección brasileña, no se obtendrían los 5 puntos adicionales.</p>
                     <p>Al final en ese partido el participante obtendría un total de 3 puntos.</p>
-                    <p>Para los juegos de semifinales, tercer lugar y la final, únicamente se obtendrá 1 punto por cada acierto a la selección ganadora.</p>
                 </section>
 
                 <section>
