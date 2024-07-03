@@ -93,9 +93,9 @@ export const calculatePoints = (prediction: IGame[], result: IGame[]): IGame[] =
         } else {
             if(item.winner === result[index].winner) {
                 if(item.winner === 1) {
-                    if(item.country1 === result[index].country1) points += 1
+                    if(item.country1 === result[index].country1) points += item.type === 'round2' ? 2 : item.type === 'third' ? 3 : 5
                 } else if(item.winner === 2) {
-                    if(item.country2 === result[index].country2) points += 1
+                    if(item.country2 === result[index].country2) points += item.type === 'round2' ? 2 : item.type === 'third' ? 3 : 5
                 }
             }
         }
